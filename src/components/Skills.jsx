@@ -1,11 +1,12 @@
 import React from 'react';
 import { Code2 } from 'lucide-react';
 import { profile } from '../data/profile';
+import c from "/src/assets/c.png";
 
 // Map skill names to their PNG file paths
 const skillIcons = {
   // Languages
-  'C': '/src/assets/c.png',
+  'C': c,
   'C++': '/src/assets/c++.png',
   'Java': '/src/assets/java.png',
   'Python': '/src/assets/python.png',
