@@ -1,6 +1,7 @@
 import React from 'react';
 import { Cpu, Download, ExternalLink } from 'lucide-react';
 import { profile } from '../data/profile';
+import cvFile from '../assets/cv.pdf';
 
 const Hero = () => {
   return (
@@ -39,7 +40,7 @@ const Hero = () => {
             
             {/* Download CV Button */}
             <a 
-              href="/src/assets/cv.pdf" 
+              href={cvFile} 
               download="Arup_Ratan_Dey_CV.pdf"
               className="group relative px-8 py-3 bg-transparent border-2 border-cyan-500 text-cyan-400 font-bold rounded-full transition-all duration-300 overflow-hidden"
             >
