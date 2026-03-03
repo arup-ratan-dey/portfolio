@@ -1,6 +1,5 @@
 export const profile = {
-  // image: "/src/assets/arup.jpg",
-  image: "https://github.com/arup-ratan-dey/portfolio/blob/main/src/assets/arup.jpg",
+  image: "/src/assets/arup.jpg",
   
   name: "Arup Ratan Dey",
   title: "Competitive Programmer & Web Developer",
