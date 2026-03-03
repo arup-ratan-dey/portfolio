@@ -129,7 +129,7 @@ npm start
 * Build the project for production:
 
 ```bash
-npm run build
+npm run dev
 ```
 
 * Deploy to **Vercel**, **Netlify**, or any static hosting service.
