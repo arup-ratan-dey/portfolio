@@ -25,7 +25,7 @@ const Navbar = () => {
             <span className="text-white text-2xl font-extrabold tracking-wider group-hover:text-cyan-400 transition-colors duration-300">
               Ratan
             </span>
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-linear-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></span>
           </span>
         </a>
 

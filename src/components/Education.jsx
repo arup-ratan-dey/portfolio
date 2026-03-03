@@ -37,7 +37,7 @@ const Education = () => {
         </div>
         
         <div className="flex flex-col items-end gap-3">
-          <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-lg font-bold shadow-lg hover:shadow-cyan-500/50 transition-shadow cursor-pointer">
+          <div className="bg-linear-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-lg font-bold shadow-lg hover:shadow-cyan-500/50 transition-shadow cursor-pointer">
             {edu.grade}
           </div>
           
