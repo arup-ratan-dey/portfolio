@@ -21,7 +21,7 @@ import vscode from "../assets/vscode.png";
 import vercel from "../assets/vercel.png";
 import netlify from "../assets/netlify.png";
 
-// Map skill names to their PNG file paths
+
 const skillIcons = {
   // Languages
   'C': c,
