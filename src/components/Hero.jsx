@@ -1,310 +1,103 @@
-// import React from 'react';
-// import { Cpu, Download, ExternalLink } from 'lucide-react';
-// import { profile } from '../data/profile';
-// import cvFile from '../assets/cv.pdf';
-
-// const Hero = () => {
-//   return (
-//     <section id="home" className="pt-40 pb-24 px-4">
-//       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        
-//         {/* Text Section */}
-//         <div className="flex-1 text-center md:text-left">
-//           <div className="inline-block px-4 py-2 bg-slate-800 rounded-full mb-4 border border-cyan-500/30">
-//             <span className="text-cyan-400 text-sm font-medium">👋 Hello, I'm</span>
-//           </div>
-          
-//           {/* Animated Name */}
-//           <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4">
-//             <span className="relative inline-block group">
-//               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-300% animate-gradient">
-//                 Arup Ratan Dey
-//               </span>
-//               <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-[0_0_10px_rgba(6,182,212,0.8)]"></span>
-//             </span>
-//           </h1>
-          
-//           <p className="text-xl text-slate-400 mb-2">{profile.title}</p>
-//           <p className="text-lg text-slate-500 mb-6">{profile.university}</p>
-          
-//           <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-//             {profile.bio}
-//           </p>
-          
-//           {/* Buttons */}
-//           <div className="flex justify-center md:justify-start gap-4 flex-wrap">
-//             {/* Contact Button */}
-//             <a href="#contact" className="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-full transition transform hover:scale-105 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)]">
-//               Contact Me
-//             </a>
-            
-//             {/* Download CV Button */}
-//             <a 
-//               href={cvFile} 
-//               download="Arup_Ratan_Dey_CV.pdf"
-//               className="group relative px-8 py-3 bg-transparent border-2 border-cyan-500 text-cyan-400 font-bold rounded-full transition-all duration-300 overflow-hidden"
-//             >
-//               {/* Background Animation */}
-//               <span className="absolute inset-0 w-full h-full bg-cyan-500/0 group-hover:bg-cyan-500/10 transition-all duration-300"></span>
-              
-//               {/* Icon and Text */}
-//               <span className="relative flex items-center gap-2">
-//                 <Download className="w-5 h-5 group-hover:animate-bounce" />
-//                 <span>Download CV</span>
-//               </span>
-              
-//               {/* Animated Arrow */}
-//               <ExternalLink className="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300" />
-//             </a>
-            
-//             {/* View Stats Button */}
-//             <a href="#stats" className="px-8 py-3 border border-slate-600 hover:border-cyan-400 text-white font-bold rounded-full transition hover:bg-slate-800">
-//               View Stats
-//             </a>
-//           </div>
-//         </div>
-
-//         {/* Image Section with Animation */}
-//         <div className="flex-1 flex justify-center">
-//           <div className="relative">
-//             {/* Animated Circle Background */}
-//             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full opacity-20 animate-pulse blur-3xl"></div>
-            
-//             {/* Your Image */}
-//             <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-700 shadow-2xl shadow-cyan-500/20 hover:border-cyan-400 transition-all duration-500 transform hover:scale-105 group">
-//               <img 
-//                 src={profile.image} 
-//                 alt={profile.name} 
-//                 className="w-full h-full object-cover"
-//               />
-//             </div>
-
-//             {/* Floating Badge 1 */}
-//             <div className="absolute -top-4 -right-4 bg-slate-800 px-4 py-2 rounded-full border border-slate-700 shadow-lg animate-bounce" style={{ animationDuration: '2s' }}>
-//               <span className="text-green-400 font-bold">⚡ CP</span>
-//             </div>
-
-//             {/* Floating Badge 2 */}
-//             <div className="absolute -bottom-4 -left-4 bg-slate-800 px-4 py-2 rounded-full border border-slate-700 shadow-lg animate-bounce" style={{ animationDuration: '2.5s', animationDelay: '0.5s' }}>
-//               <span className="text-yellow-400 font-bold">💻 Dev</span>
-//             </div>
-//           </div>
-//         </div>
-
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
-
-
-
-
 import React from 'react';
 import { Cpu, Download, ExternalLink } from 'lucide-react';
-import { motion } from 'framer-motion';
 import { profile } from '../data/profile';
 import cvFile from '../assets/cv.pdf';
 
 const Hero = () => {
   return (
-    <motion.section 
-      id="home" 
-      className="pt-40 pb-24 px-4"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-    >
+    <section id="home" className="pt-40 pb-24 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         
         {/* Text Section */}
-        <motion.div 
-          className="flex-1 text-center md:text-left"
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6 }}
-        >
-          <motion.div 
-            className="inline-block px-4 py-2 bg-slate-800 rounded-full mb-4 border border-cyan-500/30"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring" }}
-          >
+        <div className="flex-1 text-center md:text-left">
+          <div className="inline-block px-4 py-2 bg-slate-800 rounded-full mb-4 border border-cyan-500/30">
             <span className="text-cyan-400 text-sm font-medium">👋 Hello, I'm</span>
-          </motion.div>
+          </div>
           
           {/* Animated Name */}
-          <motion.h1 
-            className="text-5xl md:text-6xl font-extrabold text-white mb-4"
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-          >
+          <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4">
             <span className="relative inline-block group">
-              <motion.span 
-                className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-300% animate-gradient"
-                whileHover={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-300% animate-gradient">
                 Arup Ratan Dey
-              </motion.span>
-              <motion.span 
-                className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-[0_0_10px_rgba(6,182,212,0.8)]"
-                initial={{ width: 0 }}
-                whileHover={{ width: "100%" }}
-              ></motion.span>
+              </span>
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-[0_0_10px_rgba(6,182,212,0.8)]"></span>
             </span>
-          </motion.h1>
+          </h1>
           
-          <motion.p 
-            className="text-xl text-slate-400 mb-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-          >
-            {profile.title}
-          </motion.p>
-          <motion.p 
-            className="text-lg text-slate-500 mb-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            {profile.university}
-          </motion.p>
+          <p className="text-xl text-slate-400 mb-2">{profile.title}</p>
+          <p className="text-lg text-slate-500 mb-6">{profile.university}</p>
           
-          <motion.p 
-            className="text-lg text-slate-300 mb-8 leading-relaxed"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-          >
+          <p className="text-lg text-slate-300 mb-8 leading-relaxed">
             {profile.bio}
-          </motion.p>
+          </p>
           
           {/* Buttons */}
-          <motion.div 
-            className="flex justify-center md:justify-start gap-4 flex-wrap"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.7 }}
-          >
+          <div className="flex justify-center md:justify-start gap-4 flex-wrap">
             {/* Contact Button */}
-            <motion.a 
-              href="#contact" 
-              className="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-full transition transform hover:scale-105 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)]"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <a href="#contact" className="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-full transition transform hover:scale-105 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)]">
               Contact Me
-            </motion.a>
+            </a>
             
             {/* Download CV Button */}
-            <motion.a 
+            <a 
               href={cvFile} 
               download="Arup_Ratan_Dey_CV.pdf"
               className="group relative px-8 py-3 bg-transparent border-2 border-cyan-500 text-cyan-400 font-bold rounded-full transition-all duration-300 overflow-hidden"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
             >
-              <motion.span 
-                className="absolute inset-0 w-full h-full bg-cyan-500/0 group-hover:bg-cyan-500/10 transition-all duration-300"
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-              ></motion.span>
+              {/* Background Animation */}
+              <span className="absolute inset-0 w-full h-full bg-cyan-500/0 group-hover:bg-cyan-500/10 transition-all duration-300"></span>
               
+              {/* Icon and Text */}
               <span className="relative flex items-center gap-2">
-                <motion.div
-                  animate={{ y: [0, -5, 0] }}
-                  transition={{ repeat: Infinity, duration: 1.5 }}
-                >
-                  <Download className="w-5 h-5 group-hover:animate-bounce" />
-                </motion.div>
+                <Download className="w-5 h-5 group-hover:animate-bounce" />
                 <span>Download CV</span>
               </span>
               
-              <motion.div
-                className="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300"
-                initial={{ x: -5, opacity: 0 }}
-                whileHover={{ x: 0, opacity: 1 }}
-              >
-                <ExternalLink className="w-4 h-4" />
-              </motion.div>
-            </motion.a>
+              {/* Animated Arrow */}
+              <ExternalLink className="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300" />
+            </a>
             
             {/* View Stats Button */}
-            <motion.a 
-              href="#stats" 
-              className="px-8 py-3 border border-slate-600 hover:border-cyan-400 text-white font-bold rounded-full transition hover:bg-slate-800"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <a href="#stats" className="px-8 py-3 border border-slate-600 hover:border-cyan-400 text-white font-bold rounded-full transition hover:bg-slate-800">
               View Stats
-            </motion.a>
-          </motion.div>
-        </motion.div>
+            </a>
+          </div>
+        </div>
 
         {/* Image Section with Animation */}
-        <motion.div 
-          className="flex-1 flex justify-center"
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <motion.div 
-            className="relative"
-            whileHover={{ scale: 1.02 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
+        <div className="flex-1 flex justify-center">
+          <div className="relative">
             {/* Animated Circle Background */}
-            <motion.div 
-              className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full opacity-20 animate-pulse blur-3xl"
-              animate={{ opacity: [0.15, 0.25, 0.15] }}
-              transition={{ repeat: Infinity, duration: 2 }}
-            ></motion.div>
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full opacity-20 animate-pulse blur-3xl"></div>
             
             {/* Your Image */}
-            <motion.div 
-              className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-700 shadow-2xl shadow-cyan-500/20 hover:border-cyan-400 transition-all duration-500 transform hover:scale-105 group"
-              whileHover={{ scale: 1.05 }}
-            >
+            <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-700 shadow-2xl shadow-cyan-500/20 hover:border-cyan-400 transition-all duration-500 transform hover:scale-105 group">
               <img 
                 src={profile.image} 
                 alt={profile.name} 
                 className="w-full h-full object-cover"
               />
-            </motion.div>
+            </div>
 
             {/* Floating Badge 1 */}
-            <motion.div 
-              className="absolute -top-4 -right-4 bg-slate-800 px-4 py-2 rounded-full border border-slate-700 shadow-lg animate-bounce" 
-              style={{ animationDuration: '2s' }}
-              animate={{ y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 2 }}
-            >
+            <div className="absolute -top-4 -right-4 bg-slate-800 px-4 py-2 rounded-full border border-slate-700 shadow-lg animate-bounce" style={{ animationDuration: '2s' }}>
               <span className="text-green-400 font-bold">⚡ CP</span>
-            </motion.div>
+            </div>
 
             {/* Floating Badge 2 */}
-            <motion.div 
-              className="absolute -bottom-4 -left-4 bg-slate-800 px-4 py-2 rounded-full border border-slate-700 shadow-lg animate-bounce" 
-              style={{ animationDuration: '2.5s', animationDelay: '0.5s' }}
-              animate={{ y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 2.5, delay: 0.5 }}
-            >
+            <div className="absolute -bottom-4 -left-4 bg-slate-800 px-4 py-2 rounded-full border border-slate-700 shadow-lg animate-bounce" style={{ animationDuration: '2.5s', animationDelay: '0.5s' }}>
               <span className="text-yellow-400 font-bold">💻 Dev</span>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+            </div>
+          </div>
+        </div>
 
       </div>
-    </motion.section>
+    </section>
   );
 };
 
 export default Hero;
+
 
 
 
