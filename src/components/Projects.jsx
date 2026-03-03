@@ -3,8 +3,8 @@ import { Folder, Github, ExternalLink } from 'lucide-react';
 import { profile } from '../data/profile';
 
 const ProjectCard = ({ project, index }) => {
-  const isLiveDemo = index < 4; // First 4 projects have live demo
-  const isGithubOnly = index >= 4; // Last 2 projects only have GitHub
+  const isLiveDemo = index < 4; 
+  const isGithubOnly = index >= 4; 
 
   return (
     <div className="group bg-slate-800 rounded-xl border border-slate-700 overflow-hidden hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2">
