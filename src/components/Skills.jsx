@@ -1,36 +1,54 @@
 import React from 'react';
 import { Code2 } from 'lucide-react';
 import { profile } from '../data/profile';
-import c from "/src/assets/c.png";
+import c from "../assets/c.png";
+import cpp from "../assets/c++.png";
+import java from "../assets/java.png";
+import python from "../assets/python.png";
+import js from "../assets/js.png";
+import react from "../assets/react.png";
+import html5 from "../assets/html5.png";
+import css3 from "../assets/css3.png";
+import tailwind from "../assets/tailwind.png";
+import figma from "../assets/figma.png";
+import nodejs from "../assets/nodejs.png";
+import express from "../assets/express.png";
+import mongodb from "../assets/mongodb.png";
+import mysql from "../assets/mysql.png";
+import git from "../assets/git.png";
+import github from "../assets/github.png";
+import vscode from "../assets/vscode.png";
+import vercel from "../assets/vercel.png";
+import netlify from "../assets/netlify.png";
 
 // Map skill names to their PNG file paths
 const skillIcons = {
   // Languages
   'C': c,
-  'C++': '/src/assets/c++.png',
-  'Java': '/src/assets/java.png',
-  'Python': '/src/assets/python.png',
-  'JavaScript': '/src/assets/js.png',
+  'C++': cpp,
+  'Java': java,
+  'Python': python,
+  'JavaScript': js,
   
   // Frontend
-  'React': '/src/assets/react.png',
-  'HTML5': '/src/assets/html5.png',
-  'CSS3': '/src/assets/css3.png',
-  'Tailwind CSS': '/src/assets/tailwind.png',
-  'Figma': '/src/assets/figma.png',
+  'React': react,
+  'HTML5': html5,
+  'CSS3': css3,
+  'Tailwind CSS': tailwind,
+  'Figma': figma,
   
   // Backend
-  'Node.js': '/src/assets/nodejs.png',
-  'Express': '/src/assets/express.png',
-  'MongoDB': '/src/assets/mongodb.png',
-  'MySQL': '/src/assets/mysql.png',
+  'Node.js': nodejs,
+  'Express': express,
+  'MongoDB': mongodb,
+  'MySQL': mysql,
   
   // Tools
-  'Git': '/src/assets/git.png',
-  'GitHub': '/src/assets/github.png',
-  'VS Code': '/src/assets/vscode.png',
-  'Vercel': '/src/assets/vercel.png',
-  'Netlify': '/src/assets/netlify.png',
+  'Git': git,
+  'GitHub': github,
+  'VS Code': vscode,
+  'Vercel': vercel,
+  'Netlify': netlify,
 };
 
 const SkillCard = ({ category, items }) => (
