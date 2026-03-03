@@ -17,10 +17,10 @@ const Hero = () => {
           {/* Animated Name */}
           <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4">
             <span className="relative inline-block group">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-300% animate-gradient">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-300% animate-gradient">
                 Arup Ratan Dey
               </span>
-              <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-[0_0_10px_rgba(6,182,212,0.8)]"></span>
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-cyan-400 to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-[0_0_10px_rgba(6,182,212,0.8)]"></span>
             </span>
           </h1>
           
@@ -68,7 +68,7 @@ const Hero = () => {
         <div className="flex-1 flex justify-center">
           <div className="relative">
             {/* Animated Circle Background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full opacity-20 animate-pulse blur-3xl"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-cyan-500 to-blue-500 rounded-full opacity-20 animate-pulse blur-3xl"></div>
             
             {/* Your Image */}
             <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-700 shadow-2xl shadow-cyan-500/20 hover:border-cyan-400 transition-all duration-500 transform hover:scale-105 group">

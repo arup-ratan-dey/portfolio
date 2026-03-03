@@ -40,7 +40,7 @@ const StatCard = ({ title, data, color }) => (
         target="_blank"
         rel="noopener noreferrer"
         onClick={(e) => e.stopPropagation()}
-        className="flex items-center justify-between bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 p-2 rounded-lg hover:from-yellow-500/30 hover:to-orange-500/30 transition-all group/best"
+        className="flex items-center justify-between bg-linear-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 p-2 rounded-lg hover:from-yellow-500/30 hover:to-orange-500/30 transition-all group/best"
       >
         <div className="flex items-center gap-2">
           <Award className="w-4 h-4 text-yellow-500" />
@@ -59,8 +59,8 @@ const StatCard = ({ title, data, color }) => (
 );
 
 const BigStatCard = ({ icon: Icon, title, value, suffix, description }) => (
-  <div className="group relative bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2 overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  <div className="group relative bg-linear-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+    <div className="absolute inset-0 bg-linear-to-r from-cyan-500/10 via-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     <div className="absolute top-4 right-4 w-20 h-20 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all duration-300"></div>
     
     <div className="relative">
@@ -72,7 +72,7 @@ const BigStatCard = ({ icon: Icon, title, value, suffix, description }) => (
       </div>
       
       <div className="flex items-baseline gap-2">
-        <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:from-cyan-300 group-hover:to-blue-400 transition-all duration-300">
+        <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500 group-hover:from-cyan-300 group-hover:to-blue-400 transition-all duration-300">
           {value}
         </span>
         <span className="text-2xl font-bold text-cyan-400 group-hover:text-cyan-300 transition-colors">
@@ -85,7 +85,7 @@ const BigStatCard = ({ icon: Icon, title, value, suffix, description }) => (
       </p>
     </div>
     
-    <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-500"></div>
+    <div className="absolute bottom-0 left-0 w-0 h-1 bg-linear-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-500"></div>
     
     <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
       <div className="absolute top-0 right-0 w-8 h-8 bg-cyan-500/20 rounded-bl-full transform translate-x-2 -translate-y-2 group-hover:bg-cyan-500/30 transition-colors"></div>

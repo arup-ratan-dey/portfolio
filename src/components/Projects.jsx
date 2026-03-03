@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => (
   <div className="group bg-slate-800 rounded-xl border border-slate-700 overflow-hidden hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2">
     {/* Thumbnail Image */}
     <div className="relative h-48 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10"></div>
+      <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent z-10"></div>
       <img 
         src={project.image} 
         alt={project.title}
