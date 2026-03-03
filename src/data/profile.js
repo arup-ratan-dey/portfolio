@@ -7,7 +7,7 @@ import photography from "../assets/photography.png";
 import mlAdvisor from "../assets/ml_advisor.png";
 import sscCertificate from "../assets/ssc-certificate.png";
 export const profile = {
-  image: "arup",
+  image: arup,
   
   name: "Arup Ratan Dey",
   title: "Competitive Programmer & Web Developer",
@@ -50,7 +50,7 @@ export const profile = {
     {
       title: "Agency-Ai",
       description: "Built a modern digital agency landing page using React, Tailwind CSS, and Framer Motion. Features fully responsive design with dark/light theme toggle and smooth scroll-triggered animations. Includes interactive UI components and contact form with real-time validation. Designed for optimal performance across all devices with modern animations. Combines aesthetic appeal with technical excellence for engaging user experience.",
-      image: "agencyAi",
+      image: agencyAi,
       tech: ["React", "Tailwind CSS", "Framer Motion", "HTML", "Web3Forms API"],
       liveLink: "https://agency-ai-iota-blond.vercel.app/",
       githubLink: "https://github.com/arup-ratan-dey/agency-ai"
@@ -58,7 +58,7 @@ export const profile = {
     {
       title: "Acme Web Design",
       description: "Built a responsive multi-page website for a web design company using HTML5 and CSS3. Features fully responsive layout across home, about, and services pages with intuitive navigation, newsletter subscription section, and interactive quote form with validation. Designed with mobile-first approach, smooth hover effects, and clean professional UI elements for optimal user experience across all devices and screen sizes",
-      image: "acme",
+      image: acme,
       tech: ["HTML5", "CSS3", "Media Queries", "Responsive Design"],
       liveLink: "https://acme-web-design-zeta.vercel.app/",
       githubLink: "https://github.com/arup-ratan-dey/acme-web-design"
@@ -66,7 +66,7 @@ export const profile = {
     {
       title: "ArupsZone",
       description: "A responsive Amazon-inspired e-commerce frontend UI built using HTML5 and CSS3. It features a navigation bar with search and cart, hero banner, product grid layout, interactive hover effects on product cards, category sections with images, footer with useful links, shopping cart preview panel, and a fully responsive design for desktop, tablet, and mobile devices with smooth transitions and modern UI elements",
-      image: "arupsZone",
+      image: arupsZone,
       tech: ["HTML5", "CSS3", "Flexbox", "Media Queries", "Font Awesome"],
       liveLink: "https://arups-zone.vercel.app/",
       githubLink: "https://github.com/arup-ratan-dey/arups-zone"
@@ -74,7 +74,7 @@ export const profile = {
     {
       title: "ARUP'S SUITS",
       description: "A complete Java-based coffee shop management system featuring customer ordering, admin controls, sales tracking, and review submission. The project includes a modern GUI with Java Swing, interactive order management, visual sales charts, and secure admin authentication.",
-      image: "arupsSuits",
+      image: arupsSuits,
       tech: ["Java", "Java Swing", "JFreeChart", "File I/O", "Custom GUI Design"],
       liveLink: "https://drive.google.com/file/d/12w8D5faEoCB8ui6XaEfslwpB7bwM27Km/view?usp=drive_link",
       githubLink: "https://github.com/arup-ratan-dey/shop-main?tab=readme-ov-file"
@@ -82,7 +82,7 @@ export const profile = {
     {
       title: "Photography Club",
       description: "A web-based platform for photographers to share, categorize, and manage photos, participate in events, and interact with other enthusiasts. Features include user authentication, photo and event management, searchable photo gallery, interactive dashboard, and responsive design for all devices.",
-      image: "photography",
+      image: photography,
       tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL (PDO)", "Git"],
       // liveLink: "https://your-live-site.com",
       githubLink: "https://github.com/arup-ratan-dey/photography-club"
@@ -90,7 +90,7 @@ export const profile = {
     {
       title: "ML Based Student Advisior",
       description: "AI-powered platform that predicts student grades with 83% accuracy and generates personalized improvement plans using machine learning and GroqCloud LLM. Features interactive student profiling, real-time risk assessment, and automated PDF report generation with Google Colab support.",
-      image: "mlAdvisor",
+      image: mlAdvisor,
       tech: ["Python", "Scikit-learn", "GroqCloud API", "Pandas", "Matplotlib", "Google Colab"],
       // liveLink: "https://your-live-site.com",
       githubLink: "https://github.com/arup-ratan-dey/ml-student-advisor"
@@ -179,7 +179,7 @@ export const profile = {
       year: "2007 - 2019", 
       grade: "GPA 5.00/5.00",
       website: "https://www.rkls.edu.bd/",
-      certificate: "sscCertificate"
+      certificate: sscCertificate
     }
   ]
 };
