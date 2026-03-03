@@ -136,7 +136,7 @@ import { motion } from 'framer-motion';
 import { profile } from '../data/profile';
 
 const ProjectCard = ({ project, index }) => {
-  const isGitHubOnly = index >= 3;
+  const isGitHubOnly = index >= 4;
   const mainLink = isGitHubOnly ? project.githubLink : project.liveLink;
 
   return (
