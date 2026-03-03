@@ -2,7 +2,7 @@ import React from 'react';
 import { Code2 } from 'lucide-react';
 import { profile } from '../data/profile';
 import c from "../assets/c.png";
-import cpp from "../assets/c++.png";
+import cpp from "../assets/cpp.png";
 import java from "../assets/java.png";
 import python from "../assets/python.png";
 import js from "../assets/js.png";
