@@ -1,5 +1,87 @@
+// import React, { useState } from 'react';
+// import { Menu, X, Code2 } from 'lucide-react';
+
+// const Navbar = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   const navItems = [
+//     { name: 'Home', href: '#home' },
+//     { name: 'CP Stats', href: '#stats' },
+//     { name: 'Contests', href: '#contests' },
+//     { name: 'Projects', href: '#projects' },
+//     { name: 'Skills', href: '#skills' },
+//     { name: 'Education', href: '#education' },
+//   ];
+
+//   return (
+//     <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-800 z-50">
+//       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+//         {/* Logo */}
+//         <a href="#home" className="text-xl font-bold group">
+//           <span className="relative inline-block">
+//             <span className="text-cyan-400 text-2xl font-extrabold tracking-wider group-hover:text-cyan-300 transition-colors duration-300">
+//               Arup
+//             </span>
+//             <span className="text-white text-2xl font-extrabold tracking-wider group-hover:text-cyan-400 transition-colors duration-300">
+//               Ratan
+//             </span>
+//             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></span>
+//           </span>
+//         </a>
+
+//         {/* Desktop Menu */}
+//         <div className="hidden md:flex gap-6 text-sm font-medium">
+//           {navItems.map((item) => (
+//             <a 
+//               key={item.name}
+//               href={item.href} 
+//               className="text-slate-300 hover:text-cyan-400 transition-colors duration-200 relative group"
+//             >
+//               {item.name}
+//               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-200"></span>
+//             </a>
+//           ))}
+//         </div>
+
+//         {/* Mobile Menu Button */}
+//         <button 
+//           className="md:hidden p-2 text-slate-300 hover:text-cyan-400 transition-colors"
+//           onClick={() => setIsOpen(!isOpen)}
+//         >
+//           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+//         </button>
+//       </div>
+
+//       {/* Mobile Menu Dropdown */}
+//       <div 
+//         className={`md:hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-800 transition-all duration-300 overflow-hidden ${
+//           isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+//         }`}
+//       >
+//         <div className="px-4 py-4 space-y-2">
+//           {navItems.map((item) => (
+//             <a 
+//               key={item.name}
+//               href={item.href}
+//               onClick={() => setIsOpen(false)}
+//               className="block py-3 px-4 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded-lg transition-colors duration-200"
+//             >
+//               {item.name}
+//             </a>
+//           ))}
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
 import React, { useState } from 'react';
 import { Menu, X, Code2 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,64 +96,98 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-800 z-50">
+    <motion.nav 
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-800 z-50"
+    >
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <a href="#home" className="text-xl font-bold group">
-          <span className="relative inline-block">
+          <motion.span 
+            className="relative inline-block"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <span className="text-cyan-400 text-2xl font-extrabold tracking-wider group-hover:text-cyan-300 transition-colors duration-300">
               Arup
             </span>
             <span className="text-white text-2xl font-extrabold tracking-wider group-hover:text-cyan-400 transition-colors duration-300">
               Ratan
             </span>
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></span>
-          </span>
+            <motion.span 
+              className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"
+              initial={{ width: 0 }}
+              whileHover={{ width: "100%" }}
+            ></motion.span>
+          </motion.span>
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-6 text-sm font-medium">
-          {navItems.map((item) => (
-            <a 
+        <motion.div 
+          className="hidden md:flex gap-6 text-sm font-medium"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          {navItems.map((item, idx) => (
+            <motion.a 
               key={item.name}
               href={item.href} 
               className="text-slate-300 hover:text-cyan-400 transition-colors duration-200 relative group"
+              whileHover={{ y: -2 }}
+              transition={{ type: "spring", stiffness: 300 }}
             >
               {item.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-200"></span>
-            </a>
+              <motion.span 
+                className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-200"
+                initial={{ width: 0 }}
+                whileHover={{ width: "100%" }}
+              ></motion.span>
+            </motion.a>
           ))}
-        </div>
+        </motion.div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <motion.button 
           className="md:hidden p-2 text-slate-300 hover:text-cyan-400 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
+          whileTap={{ scale: 0.9 }}
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        </motion.button>
       </div>
 
       {/* Mobile Menu Dropdown */}
-      <div 
+      <motion.div 
         className={`md:hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-800 transition-all duration-300 overflow-hidden ${
           isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
+        initial={false}
+        animate={{ 
+          height: isOpen ? 'auto' : 0,
+          opacity: isOpen ? 1 : 0
+        }}
+        transition={{ duration: 0.3 }}
       >
         <div className="px-4 py-4 space-y-2">
-          {navItems.map((item) => (
-            <a 
+          {navItems.map((item, idx) => (
+            <motion.a 
               key={item.name}
               href={item.href}
               onClick={() => setIsOpen(false)}
               className="block py-3 px-4 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded-lg transition-colors duration-200"
+              initial={{ x: -20, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: idx * 0.1 }}
             >
               {item.name}
-            </a>
+            </motion.a>
           ))}
         </div>
-      </div>
-    </nav>
+      </motion.div>
+    </motion.nav>
   );
 };
 
