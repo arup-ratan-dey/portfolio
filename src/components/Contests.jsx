@@ -20,7 +20,7 @@ const Contests = () => {
             className="group relative bg-slate-800 p-5 rounded-xl border border-slate-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2 overflow-hidden"
           >
             {/* Animated Background Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/5 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-cyan-500/0 via-cyan-500/5 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             
             <div className="relative flex justify-between items-center">
               <div className="flex-1">
@@ -35,7 +35,7 @@ const Contests = () => {
               </div>
               
               <div className="text-right flex flex-col items-end">
-                <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-1 rounded-full font-bold text-sm shadow-lg group-hover:shadow-cyan-500/50 transition-shadow">
+                <div className="bg-linear-to-r from-cyan-500 to-blue-500 text-white px-3 py-1 rounded-full font-bold text-sm shadow-lg group-hover:shadow-cyan-500/50 transition-shadow">
                   {contest.rank}
                 </div>
                 <div className="flex items-center gap-1 mt-2 text-slate-500 group-hover:text-cyan-400 transition-colors">
@@ -46,7 +46,7 @@ const Contests = () => {
             </div>
 
             {/* Bottom Border Animation */}
-            <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-1 bg-linear-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></div>
           </a>
         ))}
       </div>
