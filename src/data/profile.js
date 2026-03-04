@@ -84,7 +84,7 @@ export const profile = {
       description: "A web-based platform for photographers to share, categorize, and manage photos, participate in events, and interact with other enthusiasts. Features include user authentication, photo and event management, searchable photo gallery, interactive dashboard, and responsive design for all devices.",
       image: photography,
       tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL (PDO)", "Git"],
-      liveLink: "https://portfolio-kappa-seven-vd8dbikuzb.vercel.app/",
+      liveLink: "https://drive.google.com/file/d/1hnXqVbK8JEoj4MzmjhyPMoEQNQB5pfXg/view?usp=drivesdk",
       githubLink: "https://github.com/arup-ratan-dey/photography-club"
     },
     {
