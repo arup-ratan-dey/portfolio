@@ -3,7 +3,7 @@ import { Folder, Github, ExternalLink } from 'lucide-react';
 import { profile } from '../data/profile';
 
 const ProjectCard = ({ project, index }) => {
-  const isLiveDemo = index < 4; 
+  const isLiveDemo = index < 5; 
   const isGithubOnly = index >= 4; 
 
   return (
