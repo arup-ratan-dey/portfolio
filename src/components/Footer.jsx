@@ -35,7 +35,7 @@ const Footer = () => {
         </button>
 
       </div>
-      <p className="text-slate-500">© 2025 Arup Ratan Dey. All rights reserved.</p>
+      <p className="text-slate-500">© 2026 Arup Ratan Dey. All rights reserved.</p>
     </footer>
   );
 };
