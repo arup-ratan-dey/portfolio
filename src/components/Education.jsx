@@ -5,7 +5,7 @@ import { profile } from '../data/profile';
 
 const Education = () => {
   return (
-    <section id="education" className="py-20 px-4 max-w-6xl mx-auto scroll-mt-20">
+    <section id="education" className="py-16 px-4 max-w-6xl mx-auto scroll-mt-20">
       <div className="flex items-center gap-3 mb-10">
         <GraduationCap className="w-8 h-8 text-cyan-400" />
         <h2 className="text-3xl font-bold text-white border-b-2 border-cyan-500 pb-2">Education</h2>
