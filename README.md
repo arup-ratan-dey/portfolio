@@ -1,4 +1,3 @@
-
 # Arup Ratan Dey Portfolio
 
 A modern, visually appealing portfolio website built with **React** and **Tailwind CSS** to showcase my competitive programming achievements, projects, skills, and education.
@@ -104,10 +103,10 @@ npm install
 3. **Start development server**
 
 ```bash
-npm start
+npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
@@ -129,10 +128,20 @@ npm start
 * Build the project for production:
 
 ```bash
-npm run dev
+npm run build
 ```
 
 * Deploy to **Vercel**, **Netlify**, or any static hosting service.
+
+---
+
+## 🙏 Acknowledgments
+
+  * Tailwind CSS - For the utility-first CSS framework
+  * Framer Motion - For smooth animations
+  * Lucide React - For beautiful icons
+  * Web3Forms - For email form functionality
+  * Codeforces, CodeChef, AtCoder - For CP platforms
 
 ---
 
@@ -140,7 +149,10 @@ npm run dev
 
 **Arup Ratan Dey**
 
-* Email: [arupratandey3250@gmail.com](mailto:arupratandey3250@gmail.com)
-* GitHub: [arup-ratan-dey](https://github.com/arup-ratan-dey)
-* LinkedIn: [Arup Ratan Dey](https://www.linkedin.com/in/arup-ratan-dey-8a0815249/)
+  * Email: [arupratandey3250@gmail.com](mailto:arupratandey3250@gmail.com)
+  * GitHub: [arup-ratan-dey](https://github.com/arup-ratan-dey)
+  * LinkedIn: [Arup Ratan Dey](https://www.linkedin.com/in/arup-ratan-dey-8a0815249/)
+
+
+
 
