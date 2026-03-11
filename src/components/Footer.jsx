@@ -126,7 +126,7 @@ const Footer = () => {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
-                placeholder="John Doe"
+                placeholder="Your Name"
               />
             </div>
             <div>
@@ -138,7 +138,7 @@ const Footer = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
-                placeholder="john@example.com"
+                placeholder="name@gmail.com"
               />
             </div>
           </div>
