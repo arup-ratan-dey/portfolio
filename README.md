@@ -4,6 +4,12 @@ A modern, visually appealing portfolio website built with **React** and **Tailwi
 
 ---
 
+## 🖼️ Portfolio Preview
+
+![Portfolio Preview](./screenshots/portfolio-preview.png)
+
+---
+
 ## 🔗 Live Demo
 
 [View Live Portfolio](https://portfolio-kappa-seven-vd8dbikuzb.vercel.app/)
