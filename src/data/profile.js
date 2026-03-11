@@ -21,7 +21,7 @@ export const profile = {
     codeforces: { 
       url: "https://codeforces.com/profile/arupratandey",
       bestRankUrl: "https://codeforces.com/contest/2074/standings/participant/205615573#p205615573",
-      rating: 1275, solved: 974, contests: 114, rank: "Pupil", bestRank: "3,815/24,445", color: "text-green-400" 
+      rating: 1275, solved: 975, contests: 115, rank: "Pupil", bestRank: "3,815/24,445", color: "text-green-400" 
     },
     codechef: { 
       url: "https://www.codechef.com/users/arup_ratan_dey",
