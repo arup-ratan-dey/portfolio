@@ -6,7 +6,7 @@ A modern, visually appealing portfolio website built with **React** and **Tailwi
 
 ## 🖼️ Portfolio Preview
 
-![Portfolio Preview](./screenshots/portfolio-preview.png)
+![Portfolio Preview](https://github.com/arup-ratan-dey/portfolio/blob/main/src/assets/profile.png)
 
 ---
 
