@@ -179,7 +179,7 @@ export const profile = {
       year: "2007 - 2019", 
       grade: "GPA 5.00/5.00",
       website: "https://www.rkls.edu.bd/",
-      certificate: sscCertificate
+      // certificate: sscCertificate
     }
   ]
 };
